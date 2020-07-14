@@ -1,0 +1,125 @@
+
+  td {
+    color: darkblue;
+  }
+  #gameboard th {
+    background-color: rgb(130, 214, 130);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-style: oblique;
+  }
+
+  #gameboard tr td:nth-child(odd){
+    background-color: lightgoldenrodyellow;;
+  }
+
+  #gameboard tr td:nth-child(even){
+    background-color: lightgoldenrodyellow;;
+  }
+
+  table td {
+    font-size: 15px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+  }
+  #computerpicks td {
+    background-color: lightsalmon;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-style: oblique;
+
+  }
+
+  #feedBack  td {
+    background-color: lightgoldenrodyellow;
+    color: white;
+    font-size: 5px;
+    text-align: center;
+    width: 30px;
+    height: 5px;
+    font-style: oblique;
+    border: 1px solid black;
+    
+  }
+
+  #container {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-template: 
+    "gamediv computerdiv rmarg"
+    "lbutt messagec reseta"
+    "colsel messagec reseta"
+    "spaceh messagec reseta"
+    ;
+  }
+  
+  #gameboardDiv {
+    grid-area: gamediv;
+  }
+
+  #computerPickDiv {
+    grid-area: computerdiv;
+    background-color: white;
+    border-width: 2px;
+    border-color: grey;
+    border-style: solid;
+  }
+
+  #color-select{
+    grid-area: colsel;
+   
+  }
+  #message-centerTotal{
+    grid-area: messagec;
+   
+    min-width: 400px;
+    background-color: white;
+    border-width: 2px;
+    border-color: grey;
+    border-style: solid;
+  }
+  #resetarea {
+    grid-area: reseta;
+  }
+
+  #rightMargin{
+    grid-area: rmarg;
+  }
+
+  #lockbutton{
+    grid-area: lbutt;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  #computerpicks {
+    display: none;
+  }
+
+  .top_border{
+    height: 30px;
+    background-color: lightyellow;
+  }
+
+  #spaceholder{
+    grid-area: spaceh;
+    min-height: 200px;
+ 
+    background-color: white;
+    border-width: 2px;
+    border-color: grey;
+    border-style: solid;
+  }
+
+  
